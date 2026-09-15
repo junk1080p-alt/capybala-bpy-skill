@@ -1,0 +1,30 @@
+{
+  "schema": "components/2",
+  "subject": "scene_pkg demo（冒煙測試用的倒角盒）",
+  "revision": "demo-1",
+  "note": "骨架的示範元件表，同時是 §11 Stage A item 3 拆解深度閘門的輸入：config.COMPONENTS_JSON → T.set_components_json() → main() 在建場景前檢查，最深 LEVEL < 6 即 exit 1。demo 場景只有一個 add_box(bevel=0.02) 的倒角盒加一個相對錨點標記，現實中沒有可再拆的獨立零件，所以在最深的那個元件上寫 depth_exempt 說明理由放行。真實任務請刪掉 depth_exempt、把主體拆到 LEVEL 6——例如一條街景：街道(1)→町屋(2)→一樓店面(3)→招牌(4)→燈管(5)→燈管固定夾(6)。",
+  "components": [
+    {
+      "id": "D-1",
+      "name": "示範方塊",
+      "level": 1,
+      "objects": ["Inst_DemoBlock_*"],
+      "note": "場景主體，對應 Mst_DemoBlock 母版"
+    },
+    {
+      "id": "D-2",
+      "name": "方塊本體（倒角盒）",
+      "level": 2,
+      "objects": ["Mst_DemoBlock"],
+      "depth_exempt": "demo 場景唯一量體是一個倒角盒，沒有可再拆的獨立零件；真實任務請改拆到 LEVEL 6",
+      "note": "倒角帶屬同一片連續 mesh（§13.10 規則 7），不拆成獨立元件"
+    },
+    {
+      "id": "D-3",
+      "name": "相對錨點標記",
+      "level": 2,
+      "objects": ["Inst_DemoMarker_*"],
+      "note": "layout.py 的 shape_lib.relative_loc 示例物件"
+    }
+  ]
+}
