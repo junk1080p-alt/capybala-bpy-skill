@@ -28,7 +28,7 @@ Gallery 里的每一张图，都是 **Capybala 自己的 agent runtime**（尚�
 
 - **下面每一张图都是用 DeepSeek V4.1 Flash 做的**——不是更聪明、更贵的模型。换一个模型套用这份 skill，结果会往任一方向移动：更强的模型可能更懂得照着判断逻辑走、产出更干净的结果；较弱的模型可能需要更多修正轮次，或达不到这里展示的水准。这个 gallery 不是任何模型的保证值。
 - **这个 gallery 是精选过的，不是平均水准。** 这些是一堆尝试里挑出来值得展示的成果，很多其他尝试没有做到这个水准——对一个"辅助模型判断、不是取代判断"的工具来说，这是正常现象。
-- **有两类主题是目前已知、确实存在的弱项：车辆和人形。** 车身钣件（复合曲面、接缝、可信的比例）跟人体结构，都是这份 skill 技法库还很薄弱、结果不稳定的领域——比起下面展示的产品/建筑/硬表面类主题，车辆和人形更容易做得粗糙、需要更多手动修正，甚至直接失败。下面那辆复古自行车是刚好做得不错的个例，不代表车辆类的一般水准。
+- **有两类主题是目前已知、确实存在的弱项：车辆和人形。** 车身钣件（复合曲面、接缝、可信的比例）跟人体结构，都是这份 skill 技法库还很薄弱、结果不稳定的领域——比起下面展示的产品/建筑/硬表面类主题，车辆和人形更容易做得粗糙、需要更多手动修正，甚至直接失败。下面那辆复古自行车和复古 Harley 风机车是刚好做得不错的个例，不代表车辆类的一般水准——两者都是两轮、以镀铬机械结构为主，刚好吃到这份 skill 硬表面类的强项；汽车车身或人形骑手是完全不同、难度更高、这份 skill 还没验证过的问题。
 
 ## Gallery
 
@@ -37,7 +37,7 @@ Gallery 里的每一张图，都是 **Capybala 自己的 agent runtime**（尚�
 | ![World Trade Center](gallery/wtc-towers.png) 世界贸易中心双塔 | ![Dive watch](gallery/dive-watch.png) 机械潜水表 | ![Espresso machine](gallery/espresso-machine.png) 双孔意式咖啡机 |
 | ![Vintage roadster](gallery/vintage-roadster.png) 复古敞篷自行车 | ![Cargo bike](gallery/cargo-bike.png) 货运自行车 | ![Leifeng Pagoda](gallery/leifeng-pagoda.png) 雷峰塔 |
 | ![Nova Tower](gallery/nova-tower.png) Nova Tower 办公大楼 | ![Residential tower](gallery/residential-tower.png) 20 层住宅大楼 | ![Space station](gallery/space-station.png) 模块化空间站 |
-| ![Launch vehicle](gallery/launch-vehicle.png) 发射台上的运载火箭 | ![Vintage fan](gallery/vintage-fan.png) 复古镀铬电风扇 | |
+| ![Launch vehicle](gallery/launch-vehicle.png) 发射台上的运载火箭 | ![Vintage fan](gallery/vintage-fan.png) 复古镀铬电风扇 | ![Vintage Harley-style motorcycle](gallery/harley-flh.png) 复古 Harley 风 FLH 机车 |
 
 ### 更多角度与细节
 
@@ -53,6 +53,10 @@ Gallery 里的每一张图，都是 **Capybala 自己的 agent runtime**（尚�
   <img src="gallery/dive-watch-detail.png" width="32%" alt="Dive watch, bezel and crown macro detail" />
   <img src="gallery/vintage-roadster-drivetrain.png" width="32%" alt="Vintage roadster, drivetrain detail" />
   <img src="gallery/leifeng-plaque.png" width="32%" alt="Leifeng Pagoda, entrance plaque detail" />
+</p>
+
+<p align="center">
+  <img src="gallery/harley-flh-engine.png" width="60%" alt="Vintage Harley-style motorcycle, V-twin engine and exhaust header detail" />
 </p>
 
 <p align="center">
